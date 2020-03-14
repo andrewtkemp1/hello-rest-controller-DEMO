@@ -15,17 +15,6 @@ public class PersonController {
 
     @Autowired
     PersonRepository personRepository;
-
-//    @GetMapping("/person")
-//    public Person createGetPerson(@RequestParam String name,
-//                                @RequestParam String email,
-//                                @RequestParam String birthdate){
-//
-//        LocalDate bd = LocalDate.parse(birthdate);
-//        return new Person(name, email, bd);
-//
-//    }
-
     /*** CREATE ***/
     @PostMapping("/person")
     public Person createPerson(@RequestBody Person person){
